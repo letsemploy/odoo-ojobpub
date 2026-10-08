@@ -80,6 +80,8 @@ class OjobpubTestMixin:
         cls.tags = env["ojobpub.tag"].create([{"name": "python"}, {"name": "odoo"}])
 
         Job = env["hr.job"]
+        # Demo data has published jobs; the tests expect only their own.
+        Job.search([("is_published", "=", True)]).is_published = False
         cls.job_full = Job.create(
             {
                 "name": "Odoo Developer",
