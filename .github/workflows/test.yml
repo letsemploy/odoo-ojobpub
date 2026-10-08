@@ -1,0 +1,66 @@
+---
+name: Test
+
+on:
+  push:
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10.2.0
+
+      - name: pre-commit (ruff, pylint-odoo, xml/json/yaml)
+        run: uvx pre-commit run --all-files --show-diff-on-failure
+
+  test:
+    name: Odoo 18.0 tests
+    runs-on: ubuntu-latest
+    container: ghcr.io/oca/oca-ci/py3.10-odoo18.0:latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: odoo
+          POSTGRES_PASSWORD: odoo
+          POSTGRES_DB: odoo
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      # Fail on errors and warnings in the Odoo log, not only on failed tests.
+      OCA_ENABLE_CHECKLOG_ODOO: "1"
+      # Schema validation must run in CI, not be skipped.
+      OJOBPUB_REQUIRE_JSONSCHEMA: "1"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      # Installs test-requirements.txt and puts the module on the addons path.
+      - name: Install addons and dependencies
+        run: oca_install_addons
+
+      - name: Initialize test database
+        run: oca_init_test_database
+
+      - name: Run tests
+        run: oca_run_tests

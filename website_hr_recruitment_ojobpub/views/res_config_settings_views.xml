@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_ojobpub" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.ojobpub</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='website']" position="inside">
+                <block title="Job Feed" id="ojobpub_settings" invisible="not website_id">
+                    <setting id="ojobpub_enabled_setting"
+                             string="oJobPub Feed"
+                             help="Publish your open jobs at /.well-known/ojobpub.json so that job boards and search engines can list them.">
+                        <field name="ojobpub_enabled"/>
+                        <div class="content-group mt-2" invisible="not ojobpub_enabled">
+                            <div class="row">
+                                <label for="ojobpub_language_mode" class="col-lg-4 o_light_label"/>
+                                <field name="ojobpub_language_mode"/>
+                            </div>
+                            <div class="mt-2">
+                                <a href="/.well-known/ojobpub.json" target="_blank">
+                                    <i class="oi oi-arrow-right"/> Open feed
+                                </a>
+                                <a href="https://sources.letsemploy.org/sources/new" target="_blank" class="ms-3">
+                                    <i class="oi oi-arrow-right"/> Register at SourceTracker
+                                </a>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

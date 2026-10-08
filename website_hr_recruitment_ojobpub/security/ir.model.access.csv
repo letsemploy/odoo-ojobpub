@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ojobpub_tag_user,ojobpub.tag.user,model_ojobpub_tag,hr_recruitment.group_hr_recruitment_user,1,1,1,0
+access_ojobpub_tag_manager,ojobpub.tag.manager,model_ojobpub_tag,hr_recruitment.group_hr_recruitment_manager,1,1,1,1
+access_ojobpub_tag_employee,ojobpub.tag.employee,model_ojobpub_tag,base.group_user,1,0,0,0

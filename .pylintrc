@@ -1,0 +1,22 @@
+[MASTER]
+load-plugins=pylint_odoo
+score=n
+
+[ODOOLINT]
+valid-odoo-versions=18.0
+manifest-required-authors=Let's Employ
+manifest-required-keys=license
+
+[MESSAGES CONTROL]
+# Only pylint-odoo's checks; style and generic Python checks are ruff's job.
+disable=all
+enable=odoolint,
+    dangerous-default-value,
+    duplicate-key,
+    pointless-statement,
+    reimported,
+    unreachable
+
+[REPORTS]
+msg-template={path}:{line}: [{msg_id}({symbol}), {obj}] {msg}
+reports=no

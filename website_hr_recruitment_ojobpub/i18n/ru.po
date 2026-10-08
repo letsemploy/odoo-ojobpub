@@ -1,0 +1,494 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_hr_recruitment_ojobpub
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-07 07:39+0000\n"
+"PO-Revision-Date: 2026-10-07 07:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "<i class=\"oi oi-arrow-right\"/> Open feed"
+msgstr "<i class=\"oi oi-arrow-right\"/> Открыть фид"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "<i class=\"oi oi-arrow-right\"/> Register at SourceTracker"
+msgstr "<i class=\"oi oi-arrow-right\"/> Зарегистрироваться в SourceTracker"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "<span>–</span>"
+msgstr "<span>–</span>"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__website__ojobpub_language_mode__all
+msgid "All website languages"
+msgstr "Все языки сайта"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_apply_before
+msgid "Apply Before"
+msgstr "Подать заявку до"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__apprenticeship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__apprenticeship
+msgid "Apprenticeship"
+msgstr "Ученичество"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Classification"
+msgstr "Классификация"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__color
+msgid "Color"
+msgstr "Цвет"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_res_config_settings
+msgid "Config Settings"
+msgstr "Настройки конфигурации"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__contract
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__contract
+msgid "Contract"
+msgstr "Договор подряда"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_contract_type
+msgid "Contract Type"
+msgstr "Тип договора"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__create_uid
+msgid "Created by"
+msgstr "Создано"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__create_date
+msgid "Created on"
+msgstr "Дата создания"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__daily
+msgid "Daily"
+msgstr "В день"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__website__ojobpub_language_mode__translated
+msgid "Default language and translated jobs"
+msgstr "Язык по умолчанию и переведённые вакансии"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_language_mode
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_website__ojobpub_language_mode
+msgid ""
+"Default language only: one entry per job.\n"
+"Translated: an additional entry per website language in which the job title or summary has been translated.\n"
+"All: one entry per job and website language, even if untranslated."
+msgstr ""
+"Только язык по умолчанию: одна запись на вакансию.\n"
+"Переведённые: дополнительная запись для каждого языка сайта, на который переведены название или описание вакансии.\n"
+"Все: одна запись на вакансию и язык сайта, даже без перевода."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
+msgid "Default oJobPub job type for job positions with this employment type."
+msgstr ""
+"Тип вакансии oJobPub по умолчанию для должностей с этим типом занятости."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_job_type
+msgid "Defaults from the oJobPub job type of the employment type."
+msgstr "По умолчанию берётся из типа вакансии oJobPub типа занятости."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_work_type
+msgid ""
+"Defaults to 'Remote' when the job has no job location, otherwise 'On-site'."
+msgstr ""
+"По умолчанию «Удалённо», если у вакансии нет места работы, иначе «В офисе»."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__director
+msgid "Director"
+msgstr "Директор"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
+msgid "Do not list this job in the oJobPub feed, even when it is published."
+msgstr "Не включать эту вакансию в фид oJobPub, даже если она опубликована."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
+msgid "Exclude from oJobPub"
+msgstr "Исключить из oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__executive
+msgid "Executive"
+msgstr "Высшее руководство"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_experience_level
+msgid "Experience Level"
+msgstr "Уровень опыта"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_description
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Feed Summary"
+msgstr "Описание для фида"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__freelance
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__freelance
+msgid "Freelance"
+msgstr "Фриланс"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__hourly
+msgid "Hourly"
+msgstr "В час"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_work_type__hybrid
+msgid "Hybrid"
+msgstr "Гибрид"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__internship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__internship
+msgid "Internship"
+msgstr "Стажировка"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "Job Feed"
+msgstr "Фид вакансий"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_job
+msgid "Job Position"
+msgstr "Должность"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_job_type
+msgid "Job Type"
+msgstr "Тип вакансии"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__junior
+msgid "Junior"
+msgstr "Младший специалист"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_tag_ids
+msgid "Keywords"
+msgstr "Ключевые слова"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__write_uid
+msgid "Last Updated by"
+msgstr "Последнее обновление"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__write_date
+msgid "Last Updated on"
+msgstr "Дата последнего обновления"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_apply_before
+msgid ""
+"Last day to apply. The job disappears from the oJobPub feed afterwards."
+msgstr ""
+"Последний день подачи заявок. После этого вакансия исчезает из фида oJobPub."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__lead
+msgid "Lead"
+msgstr "Ведущий специалист"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__manager
+msgid "Manager"
+msgstr "Менеджер"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__mid
+msgid "Mid"
+msgstr "Специалист"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__monthly
+msgid "Monthly"
+msgstr "В месяц"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__name
+msgid "Name"
+msgstr "Название"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_work_type__on-site
+msgid "On-site"
+msgstr "В офисе"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid ""
+"Optional plain-text summary (max. 1000 characters). If empty, the job "
+"summary is used."
+msgstr ""
+"Необязательное описание простым текстом (не более 1000 символов). Если не "
+"заполнено, используется описание вакансии."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__permanent
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__permanent
+msgid "Permanent"
+msgstr "Бессрочный"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_description
+msgid ""
+"Plain-text summary for the oJobPub feed (max. 1000 characters). If empty, "
+"the job summary is converted to text and shortened."
+msgstr ""
+"Описание простым текстом для фида oJobPub (не более 1000 символов). Если не "
+"заполнено, описание вакансии преобразуется в текст и сокращается."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_enabled
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_website__ojobpub_enabled
+msgid "Publish oJobPub Feed"
+msgstr "Публиковать фид oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid ""
+"Publish your open jobs at /.well-known/ojobpub.json so that job boards and "
+"search engines can list them."
+msgstr ""
+"Публикуйте открытые вакансии по адресу /.well-known/ojobpub.json, чтобы их "
+"могли показывать сайты вакансий и поисковые системы."
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid ""
+"Published jobs are listed in the open oJobPub feed at\n"
+"                        <code>/.well-known/ojobpub.json</code>, which job boards and\n"
+"                        search engines read directly from your website."
+msgstr ""
+"Опубликованные вакансии попадают в открытый фид oJobPub по адресу "
+"<code>/.well-known/ojobpub.json</code>, который сайты вакансий и поисковые "
+"системы читают прямо с вашего сайта."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_work_type__remote
+msgid "Remote"
+msgstr "Удалённо"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Salary"
+msgstr "Зарплата"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_currency_id
+msgid "Salary Currency"
+msgstr "Валюта зарплаты"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_min
+msgid "Salary from"
+msgstr "Зарплата от"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_interval
+msgid "Salary per"
+msgstr "Зарплата за"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_max
+msgid "Salary to"
+msgstr "Зарплата до"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__senior
+msgid "Senior"
+msgstr "Старший специалист"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_enabled
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_website__ojobpub_enabled
+msgid "Serve the published jobs of this website at /.well-known/ojobpub.json"
+msgstr ""
+"Отдавать опубликованные вакансии этого сайта по адресу /.well-"
+"known/ojobpub.json"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__temporary
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__temporary
+msgid "Temporary"
+msgstr "Срочный"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The feed summary is limited to %(max)s characters."
+msgstr "Описание для фида не может превышать %(max)s символов."
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The minimum salary cannot exceed the maximum salary."
+msgstr "Минимальная зарплата не может превышать максимальную."
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The minimum workload cannot exceed the maximum workload."
+msgstr "Минимальная занятость не может превышать максимальную."
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The salary cannot be negative."
+msgstr "Зарплата не может быть отрицательной."
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The workload must be between 0 and 100%."
+msgstr "Занятость должна быть от 0 до 100%."
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "The keyword “%(name)s” already exists."
+msgstr "Ключевое слово «%(name)s» уже существует."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.constraint,message:website_hr_recruitment_ojobpub.constraint_ojobpub_tag_name_uniq
+msgid "This keyword already exists."
+msgstr "Такое ключевое слово уже существует."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__volunteer
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__volunteer
+msgid "Volunteer"
+msgstr "Волонтёрство"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_website
+msgid "Website"
+msgstr "Сайт"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__website__ojobpub_language_mode__default
+msgid "Website default language only"
+msgstr "Только язык сайта по умолчанию"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__weekly
+msgid "Weekly"
+msgstr "В неделю"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_work_type
+msgid "Work Type"
+msgstr "Формат работы"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Workload & Salary"
+msgstr "Занятость и зарплата"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Workload (%)"
+msgstr "Занятость (%)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_workload_min
+msgid "Workload from (%)"
+msgstr "Занятость от (%)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_workload_max
+msgid "Workload to (%)"
+msgstr "Занятость до (%)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__yearly
+msgid "Yearly"
+msgstr "В год"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "oJobPub"
+msgstr "oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "oJobPub Feed"
+msgstr "Фид oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
+msgid "oJobPub Job Type"
+msgstr "Тип вакансии oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_ojobpub_tag
+msgid "oJobPub Keyword"
+msgstr "Ключевое слово oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.actions.act_window,name:website_hr_recruitment_ojobpub.ojobpub_tag_action
+#: model:ir.ui.menu,name:website_hr_recruitment_ojobpub.menu_ojobpub_tag
+msgid "oJobPub Keywords"
+msgstr "Ключевые слова oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_language_mode
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_website__ojobpub_language_mode
+msgid "oJobPub Languages"
+msgstr "Языки oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "oJobPub allows at most %(max)s keywords per job."
+msgstr "oJobPub допускает не более %(max)s ключевых слов на вакансию."
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "oJobPub keywords must have between 1 and %(max)s characters."
+msgstr "Ключевые слова oJobPub должны содержать от 1 до %(max)s символов."

@@ -1,0 +1,482 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_hr_recruitment_ojobpub
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-07 07:39+0000\n"
+"PO-Revision-Date: 2026-10-07 07:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "<i class=\"oi oi-arrow-right\"/> Open feed"
+msgstr "<i class=\"oi oi-arrow-right\"/> 打开订阅源"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "<i class=\"oi oi-arrow-right\"/> Register at SourceTracker"
+msgstr "<i class=\"oi oi-arrow-right\"/> 在 SourceTracker 注册"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "<span>–</span>"
+msgstr "<span>–</span>"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__website__ojobpub_language_mode__all
+msgid "All website languages"
+msgstr "网站的所有语言"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_apply_before
+msgid "Apply Before"
+msgstr "申请截止日期"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__apprenticeship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__apprenticeship
+msgid "Apprenticeship"
+msgstr "学徒"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Classification"
+msgstr "分类"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__color
+msgid "Color"
+msgstr "颜色"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置设置"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__contract
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__contract
+msgid "Contract"
+msgstr "项目合同"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_contract_type
+msgid "Contract Type"
+msgstr "合同类型"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__create_date
+msgid "Created on"
+msgstr "创建日期"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__daily
+msgid "Daily"
+msgstr "每天"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__website__ojobpub_language_mode__translated
+msgid "Default language and translated jobs"
+msgstr "默认语言和已翻译的职位"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_language_mode
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_website__ojobpub_language_mode
+msgid ""
+"Default language only: one entry per job.\n"
+"Translated: an additional entry per website language in which the job title or summary has been translated.\n"
+"All: one entry per job and website language, even if untranslated."
+msgstr ""
+"仅默认语言：每个职位一条记录。\n"
+"已翻译：职位标题或摘要已翻译成的每种网站语言各增加一条记录。\n"
+"全部：每个职位和每种网站语言各一条记录，即使未翻译。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
+msgid "Default oJobPub job type for job positions with this employment type."
+msgstr "具有此雇用类型的职位的默认 oJobPub 职位类型。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_job_type
+msgid "Defaults from the oJobPub job type of the employment type."
+msgstr "默认取自雇用类型的 oJobPub 职位类型。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_work_type
+msgid ""
+"Defaults to 'Remote' when the job has no job location, otherwise 'On-site'."
+msgstr "职位没有工作地点时默认为“远程”，否则为“现场”。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__director
+msgid "Director"
+msgstr "总监"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
+msgid "Do not list this job in the oJobPub feed, even when it is published."
+msgstr "即使已发布，也不在 oJobPub 订阅源中列出此职位。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
+msgid "Exclude from oJobPub"
+msgstr "从 oJobPub 中排除"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__executive
+msgid "Executive"
+msgstr "高管"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_experience_level
+msgid "Experience Level"
+msgstr "经验水平"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_description
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Feed Summary"
+msgstr "订阅源摘要"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__freelance
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__freelance
+msgid "Freelance"
+msgstr "自由职业"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__hourly
+msgid "Hourly"
+msgstr "每小时"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_work_type__hybrid
+msgid "Hybrid"
+msgstr "混合办公"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__internship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__internship
+msgid "Internship"
+msgstr "实习"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "Job Feed"
+msgstr "职位订阅源"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_job
+msgid "Job Position"
+msgstr "工作岗位"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_job_type
+msgid "Job Type"
+msgstr "职位类型"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__junior
+msgid "Junior"
+msgstr "初级"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_tag_ids
+msgid "Keywords"
+msgstr "关键词"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__write_uid
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_apply_before
+msgid ""
+"Last day to apply. The job disappears from the oJobPub feed afterwards."
+msgstr "申请的最后一天。此后该职位将从 oJobPub 订阅源中消失。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__lead
+msgid "Lead"
+msgstr "团队负责人"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__manager
+msgid "Manager"
+msgstr "经理"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__mid
+msgid "Mid"
+msgstr "中级"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__monthly
+msgid "Monthly"
+msgstr "每月"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__name
+msgid "Name"
+msgstr "名称"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_work_type__on-site
+msgid "On-site"
+msgstr "现场"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid ""
+"Optional plain-text summary (max. 1000 characters). If empty, the job "
+"summary is used."
+msgstr "可选的纯文本摘要（最多 1000 个字符）。如果为空，则使用职位摘要。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__permanent
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__permanent
+msgid "Permanent"
+msgstr "长期"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_description
+msgid ""
+"Plain-text summary for the oJobPub feed (max. 1000 characters). If empty, "
+"the job summary is converted to text and shortened."
+msgstr "用于 oJobPub 订阅源的纯文本摘要（最多 1000 个字符）。如果为空，职位摘要将转换为文本并缩短。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_enabled
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_website__ojobpub_enabled
+msgid "Publish oJobPub Feed"
+msgstr "发布 oJobPub 订阅源"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid ""
+"Publish your open jobs at /.well-known/ojobpub.json so that job boards and "
+"search engines can list them."
+msgstr "在 /.well-known/ojobpub.json 发布您的空缺职位，以便招聘网站和搜索引擎列出它们。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid ""
+"Published jobs are listed in the open oJobPub feed at\n"
+"                        <code>/.well-known/ojobpub.json</code>, which job boards and\n"
+"                        search engines read directly from your website."
+msgstr ""
+"已发布的职位会列在开放的 oJobPub 订阅源 <code>/.well-known/ojobpub.json</code> "
+"中，招聘网站和搜索引擎会直接从您的网站读取。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_work_type__remote
+msgid "Remote"
+msgstr "远程"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Salary"
+msgstr "薪资"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_currency_id
+msgid "Salary Currency"
+msgstr "薪资币种"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_min
+msgid "Salary from"
+msgstr "薪资下限"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_interval
+msgid "Salary per"
+msgstr "薪资周期"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_max
+msgid "Salary to"
+msgstr "薪资上限"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__senior
+msgid "Senior"
+msgstr "高级"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_enabled
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_website__ojobpub_enabled
+msgid "Serve the published jobs of this website at /.well-known/ojobpub.json"
+msgstr "在 /.well-known/ojobpub.json 提供此网站已发布的职位"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__temporary
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__temporary
+msgid "Temporary"
+msgstr "临时"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The feed summary is limited to %(max)s characters."
+msgstr "订阅源摘要最多 %(max)s 个字符。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The minimum salary cannot exceed the maximum salary."
+msgstr "最低薪资不能超过最高薪资。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The minimum workload cannot exceed the maximum workload."
+msgstr "最低工作量不能超过最高工作量。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The salary cannot be negative."
+msgstr "薪资不能为负数。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The workload must be between 0 and 100%."
+msgstr "工作量必须介于 0 到 100% 之间。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "The keyword “%(name)s” already exists."
+msgstr "关键词“%(name)s”已存在。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.constraint,message:website_hr_recruitment_ojobpub.constraint_ojobpub_tag_name_uniq
+msgid "This keyword already exists."
+msgstr "此关键词已存在。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__volunteer
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__volunteer
+msgid "Volunteer"
+msgstr "志愿者"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_website
+msgid "Website"
+msgstr "网站"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__website__ojobpub_language_mode__default
+msgid "Website default language only"
+msgstr "仅网站默认语言"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__weekly
+msgid "Weekly"
+msgstr "每周"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_work_type
+msgid "Work Type"
+msgstr "工作方式"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Workload & Salary"
+msgstr "工作量和薪资"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Workload (%)"
+msgstr "工作量 (%)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_workload_min
+msgid "Workload from (%)"
+msgstr "工作量下限 (%)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_workload_max
+msgid "Workload to (%)"
+msgstr "工作量上限 (%)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__yearly
+msgid "Yearly"
+msgstr "每年"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "oJobPub"
+msgstr "oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "oJobPub Feed"
+msgstr "oJobPub 订阅源"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
+msgid "oJobPub Job Type"
+msgstr "oJobPub 职位类型"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_ojobpub_tag
+msgid "oJobPub Keyword"
+msgstr "oJobPub 关键词"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.actions.act_window,name:website_hr_recruitment_ojobpub.ojobpub_tag_action
+#: model:ir.ui.menu,name:website_hr_recruitment_ojobpub.menu_ojobpub_tag
+msgid "oJobPub Keywords"
+msgstr "oJobPub 关键词"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_language_mode
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_website__ojobpub_language_mode
+msgid "oJobPub Languages"
+msgstr "oJobPub 语言"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "oJobPub allows at most %(max)s keywords per job."
+msgstr "oJobPub 每个职位最多允许 %(max)s 个关键词。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "oJobPub keywords must have between 1 and %(max)s characters."
+msgstr "oJobPub 关键词必须包含 1 到 %(max)s 个字符。"

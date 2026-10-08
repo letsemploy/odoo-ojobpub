@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_job_form_ojobpub" model="ir.ui.view">
+        <field name="name">hr.job.form.ojobpub</field>
+        <field name="model">hr.job</field>
+        <field name="inherit_id" ref="website_hr_recruitment.hr_job_form_inherit"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='recruitment_page']" position="after">
+                <page string="oJobPub" name="ojobpub_page">
+                    <div class="text-muted mb-3">
+                        Published jobs are listed in the open oJobPub feed at
+                        <code>/.well-known/ojobpub.json</code>, which job boards and
+                        search engines read directly from your website.
+                    </div>
+                    <group>
+                        <group string="Classification" name="ojobpub_classification">
+                            <field name="ojobpub_exclude"/>
+                            <field name="ojobpub_job_type" required="1"/>
+                            <field name="ojobpub_work_type"/>
+                            <field name="ojobpub_experience_level"/>
+                            <field name="ojobpub_apply_before"/>
+                            <field name="ojobpub_tag_ids" widget="many2many_tags"
+                                   options="{'color_field': 'color'}"/>
+                        </group>
+                        <group string="Workload &amp; Salary" name="ojobpub_terms">
+                            <label for="ojobpub_workload_min" string="Workload (%)"/>
+                            <div class="o_row">
+                                <field name="ojobpub_workload_min" nolabel="1"/>
+                                <span>–</span>
+                                <field name="ojobpub_workload_max" nolabel="1"/>
+                            </div>
+                            <label for="ojobpub_salary_min" string="Salary"/>
+                            <div class="o_row">
+                                <field name="ojobpub_salary_min" nolabel="1"/>
+                                <span>–</span>
+                                <field name="ojobpub_salary_max" nolabel="1"/>
+                                <field name="ojobpub_salary_currency_id" nolabel="1"
+                                       options="{'no_create': True, 'no_open': True}"/>
+                            </div>
+                            <field name="ojobpub_salary_interval"/>
+                        </group>
+                    </group>
+                    <separator string="Feed Summary"/>
+                    <field name="ojobpub_description" nolabel="1"
+                           placeholder="Optional plain-text summary (max. 1000 characters). If empty, the job summary is used."/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

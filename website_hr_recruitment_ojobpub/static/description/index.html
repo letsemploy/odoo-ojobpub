@@ -1,0 +1,90 @@
+<section class="container" style="max-width: 960px; margin: 0 auto; padding: 24px 16px; color: #1e486e;">
+    <div style="text-align: center; padding: 16px 0 32px;">
+        <img src="icon.png" alt="oJobPub" style="width: 96px; height: 96px;"/>
+        <h2 style="margin-top: 16px; font-weight: 700;">oJobPub – Open Job Feed for Job Boards</h2>
+        <p style="font-size: 18px; color: #555;">
+            Publish the open jobs of your Odoo website as an open, machine-readable feed
+            that job boards and search engines can read directly from your website.
+        </p>
+        <p style="font-size: 16px;">
+            <code style="background: #fff3e8; color: #c45f12; padding: 4px 8px; border-radius: 4px;">https://your-domain/.well-known/ojobpub.json</code>
+        </p>
+    </div>
+
+    <div class="row" style="margin-bottom: 32px;">
+        <div class="col-md-4" style="padding: 12px;">
+            <h4 style="font-weight: 700;">No job board accounts</h4>
+            <p style="color: #555;">Your jobs stay on your website. Job boards read the feed instead of
+                you copying every job into several portals.</p>
+        </div>
+        <div class="col-md-4" style="padding: 12px;">
+            <h4 style="font-weight: 700;">Works out of the box</h4>
+            <p style="color: #555;">Every published job position is listed with title, location, employment type,
+                department and a plain-text summary. Expired and excluded jobs are left out.</p>
+        </div>
+        <div class="col-md-4" style="padding: 12px;">
+            <h4 style="font-weight: 700;">Multilingual</h4>
+            <p style="color: #555;">Translated jobs get one entry per website language, with the
+                matching language URL.</p>
+        </div>
+    </div>
+
+    <h3 style="font-weight: 700; border-bottom: 2px solid #f0781e; padding-bottom: 8px;">Setup</h3>
+    <ol style="font-size: 15px; line-height: 1.8;">
+        <li>Install the module. It depends on <em>Website Recruitment</em>.</li>
+        <li>Open <code>https://your-domain/.well-known/ojobpub.json</code> to see the feed.</li>
+        <li>Optionally register your domain at
+            <a href="https://sources.letsemploy.org/sources/new" target="_blank">SourceTracker</a>
+            to get your jobs into the free daily export and API of Let's Employ.</li>
+    </ol>
+
+    <h3 style="font-weight: 700; border-bottom: 2px solid #f0781e; padding-bottom: 8px; margin-top: 32px;">Configuration</h3>
+    <ul style="font-size: 15px; line-height: 1.8;">
+        <li><strong>Website → Configuration → Settings → Job Feed</strong>: switch the feed on or off per
+            website and choose which languages are listed.</li>
+        <li><strong>Recruitment → Job Position → tab oJobPub</strong>: job type, work type (on-site, hybrid,
+            remote), experience level, workload, salary range, keywords, an <em>Apply Before</em> date and an
+            optional feed summary. All fields are optional.</li>
+        <li><strong>Recruitment → Configuration → Employment Types</strong>: the oJobPub job type that
+            new job positions get from their employment type. Odoo's standard types are mapped on install.</li>
+    </ul>
+
+    <h3 style="font-weight: 700; border-bottom: 2px solid #f0781e; padding-bottom: 8px; margin-top: 32px;">Example feed</h3>
+    <pre style="background: #f6f8fa; border-radius: 6px; padding: 16px; font-size: 13px; color: #24292e; overflow-x: auto;">{
+  "version": "1.0",
+  "lastUpdated": "2026-10-08T07:30:00Z",
+  "employer": {
+    "name": "Example AG",
+    "location": {"city": "Solothurn", "country": "CH"},
+    "url": "https://www.example.com"
+  },
+  "jobs": [{
+    "title": "Odoo Developer",
+    "language": "en",
+    "publishedAt": "2026-10-01",
+    "jobType": "permanent",
+    "workType": "hybrid",
+    "locations": [{"city": "Olten", "country": "CH"}],
+    "url": "https://www.example.com/jobs/odoo-developer-7",
+    "workLoad": {"minPercentage": 80, "maxPercentage": 100},
+    "salary": {"min": 90000, "max": 110000, "currency": "CHF", "interval": "yearly"},
+    "tags": ["odoo", "python"]
+  }]
+}</pre>
+
+    <h3 style="font-weight: 700; border-bottom: 2px solid #f0781e; padding-bottom: 8px; margin-top: 32px;">About oJobPub</h3>
+    <p style="font-size: 15px; color: #555;">
+        oJobPub is an open, free format for publishing job openings on the employer's own website,
+        similar to a sitemap for jobs. The schema is published under CC0 at
+        <a href="https://github.com/letsemploy/schema" target="_blank">github.com/letsemploy/schema</a>.
+        The feed contains only data you already publish on your job pages; the module sends nothing to
+        third parties.
+    </p>
+
+    <h3 style="font-weight: 700; border-bottom: 2px solid #f0781e; padding-bottom: 8px; margin-top: 32px;">Support</h3>
+    <p style="font-size: 15px; color: #555;">
+        Questions and bug reports:
+        <a href="mailto:info@letsemploy.org">info@letsemploy.org</a> ·
+        <a href="https://www.letsemploy.org" target="_blank">www.letsemploy.org</a>
+    </p>
+</section>

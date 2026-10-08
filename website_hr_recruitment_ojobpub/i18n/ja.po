@@ -1,0 +1,482 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_hr_recruitment_ojobpub
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-07 07:39+0000\n"
+"PO-Revision-Date: 2026-10-07 07:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "<i class=\"oi oi-arrow-right\"/> Open feed"
+msgstr "<i class=\"oi oi-arrow-right\"/> フィードを開く"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "<i class=\"oi oi-arrow-right\"/> Register at SourceTracker"
+msgstr "<i class=\"oi oi-arrow-right\"/> SourceTracker に登録"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "<span>–</span>"
+msgstr "<span>–</span>"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__website__ojobpub_language_mode__all
+msgid "All website languages"
+msgstr "ウェブサイトのすべての言語"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_apply_before
+msgid "Apply Before"
+msgstr "応募締切日"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__apprenticeship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__apprenticeship
+msgid "Apprenticeship"
+msgstr "見習い"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Classification"
+msgstr "分類"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__color
+msgid "Color"
+msgstr "カラー"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_res_config_settings
+msgid "Config Settings"
+msgstr "コンフィグ設定"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__contract
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__contract
+msgid "Contract"
+msgstr "業務委託"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_contract_type
+msgid "Contract Type"
+msgstr "契約タイプ"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__create_uid
+msgid "Created by"
+msgstr "作成者"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__create_date
+msgid "Created on"
+msgstr "作成日"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__daily
+msgid "Daily"
+msgstr "日給"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__website__ojobpub_language_mode__translated
+msgid "Default language and translated jobs"
+msgstr "既定の言語と翻訳済みの求人"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_language_mode
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_website__ojobpub_language_mode
+msgid ""
+"Default language only: one entry per job.\n"
+"Translated: an additional entry per website language in which the job title or summary has been translated.\n"
+"All: one entry per job and website language, even if untranslated."
+msgstr ""
+"既定の言語のみ: 求人ごとに 1 件。\n"
+"翻訳済み: 求人のタイトルまたは概要が翻訳されているウェブサイト言語ごとに 1 件を追加。\n"
+"すべて: 翻訳されていなくても、求人とウェブサイト言語の組み合わせごとに 1 件。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
+msgid "Default oJobPub job type for job positions with this employment type."
+msgstr "この雇用形態の職位に既定で設定される oJobPub の求人タイプ。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_job_type
+msgid "Defaults from the oJobPub job type of the employment type."
+msgstr "既定では雇用形態の oJobPub 求人タイプが使用されます。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_work_type
+msgid ""
+"Defaults to 'Remote' when the job has no job location, otherwise 'On-site'."
+msgstr "勤務地がない場合の既定値は「リモート」、それ以外は「出社」です。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__director
+msgid "Director"
+msgstr "ディレクター"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__display_name
+msgid "Display Name"
+msgstr "表示名"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
+msgid "Do not list this job in the oJobPub feed, even when it is published."
+msgstr "公開中でも、この求人を oJobPub フィードに掲載しません。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
+msgid "Exclude from oJobPub"
+msgstr "oJobPub から除外"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__executive
+msgid "Executive"
+msgstr "経営幹部"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_experience_level
+msgid "Experience Level"
+msgstr "経験レベル"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_description
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Feed Summary"
+msgstr "フィード用の概要"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__freelance
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__freelance
+msgid "Freelance"
+msgstr "フリーランス"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__hourly
+msgid "Hourly"
+msgstr "時給"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_work_type__hybrid
+msgid "Hybrid"
+msgstr "ハイブリッド"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__internship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__internship
+msgid "Internship"
+msgstr "インターンシップ"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "Job Feed"
+msgstr "求人フィード"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_job
+msgid "Job Position"
+msgstr "職位"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_job_type
+msgid "Job Type"
+msgstr "求人タイプ"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__junior
+msgid "Junior"
+msgstr "ジュニア"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_tag_ids
+msgid "Keywords"
+msgstr "キーワード"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__write_uid
+msgid "Last Updated by"
+msgstr "最終更新者"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__write_date
+msgid "Last Updated on"
+msgstr "最終更新日"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_apply_before
+msgid ""
+"Last day to apply. The job disappears from the oJobPub feed afterwards."
+msgstr "応募の最終日です。この日を過ぎると求人は oJobPub フィードから削除されます。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__lead
+msgid "Lead"
+msgstr "リード"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__manager
+msgid "Manager"
+msgstr "マネージャー"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__mid
+msgid "Mid"
+msgstr "ミドル"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__monthly
+msgid "Monthly"
+msgstr "月給"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__name
+msgid "Name"
+msgstr "名称"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_work_type__on-site
+msgid "On-site"
+msgstr "出社"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid ""
+"Optional plain-text summary (max. 1000 characters). If empty, the job "
+"summary is used."
+msgstr "任意のプレーンテキストの概要 (最大 1000 文字)。空欄の場合は求人の概要が使用されます。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__permanent
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__permanent
+msgid "Permanent"
+msgstr "正社員"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_description
+msgid ""
+"Plain-text summary for the oJobPub feed (max. 1000 characters). If empty, "
+"the job summary is converted to text and shortened."
+msgstr "oJobPub フィード用のプレーンテキストの概要 (最大 1000 文字)。空欄の場合は、求人の概要がテキストに変換され、短縮されます。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_enabled
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_website__ojobpub_enabled
+msgid "Publish oJobPub Feed"
+msgstr "oJobPub フィードを公開"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid ""
+"Publish your open jobs at /.well-known/ojobpub.json so that job boards and "
+"search engines can list them."
+msgstr "求人サイトや検索エンジンが掲載できるよう、公開中の求人を /.well-known/ojobpub.json で公開します。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid ""
+"Published jobs are listed in the open oJobPub feed at\n"
+"                        <code>/.well-known/ojobpub.json</code>, which job boards and\n"
+"                        search engines read directly from your website."
+msgstr ""
+"公開された求人はオープンな oJobPub フィード <code>/.well-known/ojobpub.json</code> "
+"に掲載され、求人サイトや検索エンジンがウェブサイトから直接読み取ります。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_work_type__remote
+msgid "Remote"
+msgstr "リモート"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Salary"
+msgstr "給与"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_currency_id
+msgid "Salary Currency"
+msgstr "給与通貨"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_min
+msgid "Salary from"
+msgstr "給与 (下限)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_interval
+msgid "Salary per"
+msgstr "給与の単位"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_salary_max
+msgid "Salary to"
+msgstr "給与 (上限)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__senior
+msgid "Senior"
+msgstr "シニア"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_enabled
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_website__ojobpub_enabled
+msgid "Serve the published jobs of this website at /.well-known/ojobpub.json"
+msgstr "このウェブサイトの公開求人を /.well-known/ojobpub.json で提供します"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__temporary
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__temporary
+msgid "Temporary"
+msgstr "契約社員"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The feed summary is limited to %(max)s characters."
+msgstr "フィード用の概要は %(max)s 文字以内にしてください。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The minimum salary cannot exceed the maximum salary."
+msgstr "給与の下限は上限を超えることはできません。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The minimum workload cannot exceed the maximum workload."
+msgstr "勤務率の下限は上限を超えることはできません。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The salary cannot be negative."
+msgstr "給与にマイナスの値は指定できません。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "The workload must be between 0 and 100%."
+msgstr "勤務率は 0〜100% の範囲で指定してください。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "The keyword “%(name)s” already exists."
+msgstr "キーワード「%(name)s」は既に存在します。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.constraint,message:website_hr_recruitment_ojobpub.constraint_ojobpub_tag_name_uniq
+msgid "This keyword already exists."
+msgstr "このキーワードは既に存在します。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__volunteer
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__volunteer
+msgid "Volunteer"
+msgstr "ボランティア"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_website
+msgid "Website"
+msgstr "ウェブサイト"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__website__ojobpub_language_mode__default
+msgid "Website default language only"
+msgstr "ウェブサイトの既定の言語のみ"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__weekly
+msgid "Weekly"
+msgstr "週給"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_work_type
+msgid "Work Type"
+msgstr "勤務形態"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Workload & Salary"
+msgstr "勤務率と給与"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "Workload (%)"
+msgstr "勤務率 (%)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_workload_min
+msgid "Workload from (%)"
+msgstr "勤務率 (下限 %)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_workload_max
+msgid "Workload to (%)"
+msgstr "勤務率 (上限 %)"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_salary_interval__yearly
+msgid "Yearly"
+msgstr "年収"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
+msgid "oJobPub"
+msgstr "oJobPub"
+
+#. module: website_hr_recruitment_ojobpub
+#: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.res_config_settings_view_form_ojobpub
+msgid "oJobPub Feed"
+msgstr "oJobPub フィード"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
+msgid "oJobPub Job Type"
+msgstr "oJobPub 求人タイプ"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_ojobpub_tag
+msgid "oJobPub Keyword"
+msgstr "oJobPub キーワード"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.actions.act_window,name:website_hr_recruitment_ojobpub.ojobpub_tag_action
+#: model:ir.ui.menu,name:website_hr_recruitment_ojobpub.menu_ojobpub_tag
+msgid "oJobPub Keywords"
+msgstr "oJobPub キーワード"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_res_config_settings__ojobpub_language_mode
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_website__ojobpub_language_mode
+msgid "oJobPub Languages"
+msgstr "oJobPub の言語"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
+msgid "oJobPub allows at most %(max)s keywords per job."
+msgstr "oJobPub では求人ごとに最大 %(max)s 個のキーワードを指定できます。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "oJobPub keywords must have between 1 and %(max)s characters."
+msgstr "oJobPub のキーワードは 1〜%(max)s 文字で指定してください。"

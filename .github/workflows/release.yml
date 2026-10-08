@@ -1,0 +1,57 @@
+---
+# Builds a versioned zip of the module and attaches it to a GitHub Release.
+#
+# The Odoo Apps Store does not need this: it reads the module straight from
+# the 18.0 branch. The release is for self-hosters and as a changelog anchor.
+#
+# Usage: bump "version" in the manifest, merge to 18.0, then
+#   git tag 18.0.1.0.1 && git push origin 18.0.1.0.1
+name: Release
+
+on:
+  push:
+    tags:
+      - "18.0.*"
+
+permissions:
+  contents: read
+
+env:
+  MODULE: website_hr_recruitment_ojobpub
+
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+
+  release:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Check tag matches manifest version
+        run: |
+          version=$(python3 -c "import ast; print(ast.literal_eval(open('$MODULE/__manifest__.py').read())['version'])")
+          if [ "$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match manifest version $version"
+            exit 1
+          fi
+
+      - name: Build zip
+        run: |
+          git archive --format=zip --output="$MODULE-$GITHUB_REF_NAME.zip" HEAD "$MODULE"
+          unzip -l "$MODULE-$GITHUB_REF_NAME.zip"
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" "$MODULE-$GITHUB_REF_NAME.zip" \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "$GITHUB_REF_NAME" \
+            --generate-notes
