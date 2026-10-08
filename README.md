@@ -32,6 +32,18 @@ The Odoo tests run in GitHub Actions with the
 [OCA CI image](https://github.com/OCA/oca-ci) (see `.github/workflows/test.yml`).
 To run them locally, see the module README.
 
+### Upgrade tests
+
+- `tests/test_migration.py` tests each migration script on its own: it
+  rebuilds the previous version's tables inside the test transaction, runs
+  the script and checks the result. Runs with the normal tests.
+- `.github/workflows/upgrade.yml` (branch `19.0`) upgrades a real 18.0
+  database to 19.0 with [OpenUpgrade](https://github.com/OCA/OpenUpgrade) and
+  checks the migrated data and the feed. It runs when migration code changes,
+  or by hand from the Actions tab.
+- 19.0 → 20.0 has no end-to-end test yet, because OpenUpgrade 20.0 does not cover
+  the HR modules yet.
+
 ## Releasing
 
 1. Bump `version` in `website_hr_recruitment_ojobpub/__manifest__.py`
