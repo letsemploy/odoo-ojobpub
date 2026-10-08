@@ -87,7 +87,7 @@ class OjobpubTestMixin:
                 "ojobpub_salary_interval": "yearly",
                 "ojobpub_apply_before": today + timedelta(days=30),
                 "ojobpub_tag_ids": [(6, 0, cls.tags.ids)],
-                "date_from": today + timedelta(days=60),
+                "ojobpub_start_date": today + timedelta(days=60),
             }
         )
         # Odoo defaults the job location to the one of the last created job;

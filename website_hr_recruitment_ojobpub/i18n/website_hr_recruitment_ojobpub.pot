@@ -133,6 +133,11 @@ msgid "Do not list this job in the oJobPub feed, even when it is published."
 msgstr ""
 
 #. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
+msgid "End Date"
+msgstr ""
+
+#. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
 msgid "Exclude from oJobPub"
 msgstr ""
@@ -151,6 +156,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_description
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
 msgid "Feed Summary"
+msgstr ""
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_start_date
+msgid "First working day of the job (oJobPub startDate)."
 msgstr ""
 
 #. module: website_hr_recruitment_ojobpub
@@ -219,6 +229,11 @@ msgstr ""
 #: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_apply_before
 msgid ""
 "Last day to apply. The job disappears from the oJobPub feed afterwards."
+msgstr ""
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
+msgid "Last working day of a fixed-term job (oJobPub endDate)."
 msgstr ""
 
 #. module: website_hr_recruitment_ojobpub
@@ -334,6 +349,11 @@ msgid "Serve the published jobs of this website at /.well-known/ojobpub.json"
 msgstr ""
 
 #. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__temporary
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__temporary
 msgid "Temporary"
@@ -343,6 +363,12 @@ msgstr ""
 #. odoo-python
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The feed summary is limited to %(max)s characters."
+msgstr ""
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "The keyword “%(name)s” already exists."
 msgstr ""
 
 #. module: website_hr_recruitment_ojobpub
@@ -367,12 +393,6 @@ msgstr ""
 #. odoo-python
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The workload must be between 0 and 100%."
-msgstr ""
-
-#. module: website_hr_recruitment_ojobpub
-#. odoo-python
-#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
-msgid "The keyword “%(name)s” already exists."
 msgstr ""
 
 #. module: website_hr_recruitment_ojobpub

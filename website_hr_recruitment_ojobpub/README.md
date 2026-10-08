@@ -1,4 +1,4 @@
-# oJobPub Job Feed for Odoo 18
+# oJobPub Job Feed for Odoo 19
 
 Publishes the jobs of an Odoo website as an [oJobPub](https://www.letsemploy.org)
 feed at `https://<your-domain>/.well-known/ojobpub.json`. Job boards and search
@@ -6,7 +6,7 @@ engines read the feed directly from the employer's website; registering the
 domain once at [SourceTracker](https://sources.letsemploy.org/sources/new) gets
 the jobs into the free daily export and API of Let's Employ.
 
-- Odoo 18.0 (Community and Enterprise), depends on `website_hr_recruitment`
+- Odoo 19.0 (Community and Enterprise), depends on `website_hr_recruitment`
 - [oJobPub schema v1](https://github.com/letsemploy/schema) (`"version": "1.0"`)
 - License: LGPL-3
 
@@ -18,7 +18,8 @@ the jobs into the free daily export and API of Let's Employ.
 4. Register the domain at <https://sources.letsemploy.org/sources/new>.
 
 The install hook pre-fills the oJobPub job type of Odoo's standard employment
-types (Permanent, Temporary, Seasonal, Apprenticeship, Thesis, Student).
+types (Permanent, Temporary, Interim, Seasonal, Apprenticeship, Intern, Thesis,
+Student).
 Other employment types can be mapped under
 *Recruitment → Configuration → Employment Types*.
 
@@ -63,7 +64,7 @@ the same feed as anonymous visitors.
 | `description` | *Feed Summary*, else the job summary converted to plain text, max. 1000 characters |
 | `category` | Department |
 | `applyBefore` | *Apply Before* |
-| `startDate` / `endDate` | Mission dates (`date_from` / `date_to`) |
+| `startDate` / `endDate` | *Start Date* / *End Date* |
 | `workType` | *Work Type*, defaults to `remote` without a job location, else `on-site` |
 | `experienceLevel` | *Experience Level* |
 | `workLoad` | *Workload from/to (%)* |

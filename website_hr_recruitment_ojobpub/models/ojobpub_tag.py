@@ -12,9 +12,9 @@ class OjobpubTag(models.Model):
     name = fields.Char(required=True, size=MAX_TAG_LENGTH)
     color = fields.Integer()
 
-    _sql_constraints = [
-        ("name_uniq", "unique(name)", "This keyword already exists."),
-    ]
+    # Case-insensitive, like the check in _check_name, which gives the nicer
+    # message; the index is the guarantee.
+    _name_uniq = models.UniqueIndex("(lower(name))", "This keyword already exists.")
 
     @api.model_create_multi
     def create(self, vals_list):

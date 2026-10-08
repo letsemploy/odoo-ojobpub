@@ -65,6 +65,8 @@ class TestOjobpubFields(OjobpubTestMixin, TransactionCase):
     def test_install_hook_maps_standard_employment_types(self):
         self.assertEqual(self.env.ref("hr.contract_type_permanent").ojobpub_job_type, "permanent")
         self.assertEqual(self.env.ref("hr.contract_type_student").ojobpub_job_type, "internship")
+        self.assertEqual(self.env.ref("hr.contract_type_interim").ojobpub_job_type, "temporary")
+        self.assertEqual(self.env.ref("hr.contract_type_intern").ojobpub_job_type, "internship")
         self.assertFalse(self.env.ref("hr.contract_type_full_time").ojobpub_job_type)
 
     def test_job_type_from_employment_type(self):

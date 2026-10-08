@@ -4,7 +4,7 @@
     "name": "oJobPub – Open Job Feed for Job Boards",
     "summary": "Publish your open jobs as an open oJobPub feed at "
     "/.well-known/ojobpub.json for job boards and search engines",
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "category": "Human Resources/Recruitment",
     "website": "https://www.letsemploy.org",
     "author": "Let's Employ",

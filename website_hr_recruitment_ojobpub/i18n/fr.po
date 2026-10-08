@@ -139,6 +139,11 @@ msgid "Do not list this job in the oJobPub feed, even when it is published."
 msgstr "Ne pas lister ce poste dans le flux oJobPub, même s'il est publié."
 
 #. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
 msgid "Exclude from oJobPub"
 msgstr "Exclure d'oJobPub"
@@ -158,6 +163,11 @@ msgstr "Niveau d'expérience"
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
 msgid "Feed Summary"
 msgstr "Résumé pour le flux"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_start_date
+msgid "First working day of the job (oJobPub startDate)."
+msgstr "Premier jour de travail du poste (oJobPub startDate)."
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__freelance
@@ -227,6 +237,12 @@ msgid ""
 "Last day to apply. The job disappears from the oJobPub feed afterwards."
 msgstr ""
 "Dernier jour pour postuler. Le poste disparaît ensuite du flux oJobPub."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
+msgid "Last working day of a fixed-term job (oJobPub endDate)."
+msgstr ""
+"Dernier jour de travail d'un poste à durée déterminée (oJobPub endDate)."
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__lead
@@ -351,6 +367,11 @@ msgstr ""
 "Publier les postes publiés de ce site web sous /.well-known/ojobpub.json"
 
 #. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_start_date
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__temporary
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__temporary
 msgid "Temporary"
@@ -361,6 +382,12 @@ msgstr "CDD"
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The feed summary is limited to %(max)s characters."
 msgstr "Le résumé pour le flux est limité à %(max)s caractères."
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "The keyword “%(name)s” already exists."
+msgstr "Le mot-clé « %(name)s » existe déjà."
 
 #. module: website_hr_recruitment_ojobpub
 #. odoo-python
@@ -385,12 +412,6 @@ msgstr "Le salaire ne peut pas être négatif."
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The workload must be between 0 and 100%."
 msgstr "Le taux d'occupation doit être compris entre 0 et 100 %."
-
-#. module: website_hr_recruitment_ojobpub
-#. odoo-python
-#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
-msgid "The keyword “%(name)s” already exists."
-msgstr "Le mot-clé « %(name)s » existe déjà."
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.constraint,message:website_hr_recruitment_ojobpub.constraint_ojobpub_tag_name_uniq

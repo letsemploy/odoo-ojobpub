@@ -137,6 +137,11 @@ msgid "Do not list this job in the oJobPub feed, even when it is published."
 msgstr "公開中でも、この求人を oJobPub フィードに掲載しません。"
 
 #. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
+msgid "End Date"
+msgstr "終了日"
+
+#. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
 msgid "Exclude from oJobPub"
 msgstr "oJobPub から除外"
@@ -156,6 +161,11 @@ msgstr "経験レベル"
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
 msgid "Feed Summary"
 msgstr "フィード用の概要"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_start_date
+msgid "First working day of the job (oJobPub startDate)."
+msgstr "求人の勤務開始日 (oJobPub startDate)。"
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__freelance
@@ -224,6 +234,11 @@ msgstr "最終更新日"
 msgid ""
 "Last day to apply. The job disappears from the oJobPub feed afterwards."
 msgstr "応募の最終日です。この日を過ぎると求人は oJobPub フィードから削除されます。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
+msgid "Last working day of a fixed-term job (oJobPub endDate)."
+msgstr "期間限定の求人の勤務最終日 (oJobPub endDate)。"
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__lead
@@ -340,6 +355,11 @@ msgid "Serve the published jobs of this website at /.well-known/ojobpub.json"
 msgstr "このウェブサイトの公開求人を /.well-known/ojobpub.json で提供します"
 
 #. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_start_date
+msgid "Start Date"
+msgstr "開始日"
+
+#. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__temporary
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__temporary
 msgid "Temporary"
@@ -350,6 +370,12 @@ msgstr "契約社員"
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The feed summary is limited to %(max)s characters."
 msgstr "フィード用の概要は %(max)s 文字以内にしてください。"
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "The keyword “%(name)s” already exists."
+msgstr "キーワード「%(name)s」は既に存在します。"
 
 #. module: website_hr_recruitment_ojobpub
 #. odoo-python
@@ -374,12 +400,6 @@ msgstr "給与にマイナスの値は指定できません。"
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The workload must be between 0 and 100%."
 msgstr "勤務率は 0〜100% の範囲で指定してください。"
-
-#. module: website_hr_recruitment_ojobpub
-#. odoo-python
-#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
-msgid "The keyword “%(name)s” already exists."
-msgstr "キーワード「%(name)s」は既に存在します。"
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.constraint,message:website_hr_recruitment_ojobpub.constraint_ojobpub_tag_name_uniq

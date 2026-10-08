@@ -116,6 +116,14 @@ class HrJob(models.Model):
         string="Salary per",
         default="yearly",
     )
+    ojobpub_start_date = fields.Date(
+        string="Start Date",
+        help="First working day of the job (oJobPub startDate).",
+    )
+    ojobpub_end_date = fields.Date(
+        string="End Date",
+        help="Last working day of a fixed-term job (oJobPub endDate).",
+    )
     ojobpub_apply_before = fields.Date(
         string="Apply Before",
         help="Last day to apply. The job disappears from the oJobPub feed afterwards.",
@@ -237,10 +245,10 @@ class HrJob(models.Model):
             entry["category"] = _truncate(self.department_id.name, MAX_CATEGORY)
         if self.ojobpub_apply_before:
             entry["applyBefore"] = fields.Date.to_string(self.ojobpub_apply_before)
-        if self.date_from:
-            entry["startDate"] = fields.Date.to_string(self.date_from)
-        if self.date_to:
-            entry["endDate"] = fields.Date.to_string(self.date_to)
+        if self.ojobpub_start_date:
+            entry["startDate"] = fields.Date.to_string(self.ojobpub_start_date)
+        if self.ojobpub_end_date:
+            entry["endDate"] = fields.Date.to_string(self.ojobpub_end_date)
         if self.ojobpub_work_type:
             entry["workType"] = self.ojobpub_work_type
         if self.ojobpub_experience_level:

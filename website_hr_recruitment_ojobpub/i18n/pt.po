@@ -140,6 +140,11 @@ msgid "Do not list this job in the oJobPub feed, even when it is published."
 msgstr "Não listar esta vaga no feed oJobPub, mesmo que esteja publicada."
 
 #. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
+msgid "End Date"
+msgstr "Data de fim"
+
+#. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
 msgid "Exclude from oJobPub"
 msgstr "Excluir do oJobPub"
@@ -159,6 +164,11 @@ msgstr "Nível de experiência"
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment_ojobpub.hr_job_form_ojobpub
 msgid "Feed Summary"
 msgstr "Resumo para o feed"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_start_date
+msgid "First working day of the job (oJobPub startDate)."
+msgstr "Primeiro dia de trabalho da vaga (oJobPub startDate)."
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__freelance
@@ -228,6 +238,11 @@ msgid ""
 "Last day to apply. The job disappears from the oJobPub feed afterwards."
 msgstr ""
 "Último dia para se candidatar. Depois, a vaga desaparece do feed oJobPub."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
+msgid "Last working day of a fixed-term job (oJobPub endDate)."
+msgstr "Último dia de trabalho de uma vaga a termo (oJobPub endDate)."
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_experience_level__lead
@@ -353,6 +368,11 @@ msgstr ""
 "known/ojobpub.json"
 
 #. module: website_hr_recruitment_ojobpub
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_start_date
+msgid "Start Date"
+msgstr "Data de início"
+
+#. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__temporary
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__temporary
 msgid "Temporary"
@@ -363,6 +383,12 @@ msgstr "A termo"
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The feed summary is limited to %(max)s characters."
 msgstr "O resumo para o feed está limitado a %(max)s caracteres."
+
+#. module: website_hr_recruitment_ojobpub
+#. odoo-python
+#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
+msgid "The keyword “%(name)s” already exists."
+msgstr "A palavra-chave «%(name)s» já existe."
 
 #. module: website_hr_recruitment_ojobpub
 #. odoo-python
@@ -387,12 +413,6 @@ msgstr "O salário não pode ser negativo."
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The workload must be between 0 and 100%."
 msgstr "A carga horária deve estar entre 0 e 100%."
-
-#. module: website_hr_recruitment_ojobpub
-#. odoo-python
-#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
-msgid "The keyword “%(name)s” already exists."
-msgstr "A palavra-chave «%(name)s» já existe."
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.constraint,message:website_hr_recruitment_ojobpub.constraint_ojobpub_tag_name_uniq

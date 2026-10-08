@@ -3,16 +3,15 @@ import logging
 _logger = logging.getLogger(__name__)
 
 # Odoo's standard employment types (hr/data/hr_data.xml) -> oJobPub jobType.
-# Deliberately not mapped:
-# - full_time / employee / statutaire: describe workload or legal status, not
-#   the oJobPub job type
-# - contract_type_part_time: the XML-ID is defined twice in Odoo 18 (Part-Time
-#   and Intern), so the record's meaning depends on load order
+# Deliberately not mapped: full_time / part_time / employee / statutory, which
+# describe workload or legal status, not the oJobPub job type.
 CONTRACT_TYPE_MAPPING = {
     "hr.contract_type_permanent": "permanent",
     "hr.contract_type_temporary": "temporary",
+    "hr.contract_type_interim": "temporary",
     "hr.contract_type_seasonal": "temporary",
     "hr.contract_type_apprenticeship": "apprenticeship",
+    "hr.contract_type_intern": "internship",
     "hr.contract_type_thesis": "internship",
     "hr.contract_type_student": "internship",
 }

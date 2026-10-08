@@ -19,6 +19,8 @@
                             <field name="ojobpub_work_type"/>
                             <field name="ojobpub_experience_level"/>
                             <field name="ojobpub_apply_before"/>
+                            <field name="ojobpub_start_date"/>
+                            <field name="ojobpub_end_date"/>
                             <field name="ojobpub_tag_ids" widget="many2many_tags"
                                    options="{'color_field': 'color'}"/>
                         </group>
