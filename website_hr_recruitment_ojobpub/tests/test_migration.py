@@ -75,3 +75,24 @@ class TestMigration19(TransactionCase):
         self.assertFalse(column_exists(self.env.cr, "hr_job", "date_from"))
         self._migrate()
         self.assertFalse(self.job_dated.ojobpub_start_date)
+
+    def _tag_constraint_exists(self):
+        self.env.cr.execute("SELECT 1 FROM pg_constraint WHERE conname = 'ojobpub_tag_name_uniq'")
+        return bool(self.env.cr.rowcount)
+
+    def test_drops_case_sensitive_tag_constraint(self):
+        """18.0's unique(name) shares its name with 19.0's unique(lower(name))
+        index; Odoo would keep the old one."""
+        self.env.flush_all()
+        self.env.cr.execute("DROP INDEX IF EXISTS ojobpub_tag_name_uniq")
+        self.env.cr.execute(
+            "ALTER TABLE ojobpub_tag ADD CONSTRAINT ojobpub_tag_name_uniq UNIQUE (name)"
+        )
+        self._migrate()
+        self.assertFalse(self._tag_constraint_exists())
+        self._migrate()  # nothing left to drop
+
+    def test_keeps_19_tag_index(self):
+        self._migrate()
+        self.env.cr.execute("SELECT 1 FROM pg_indexes WHERE indexname = 'ojobpub_tag_name_uniq'")
+        self.assertTrue(self.env.cr.rowcount, "the 19.0 index is not a constraint, keep it")
