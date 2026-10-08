@@ -1,0 +1,99 @@
+---
+# End-to-end upgrade test 18.0 -> 19.0 with OpenUpgrade:
+#   1. Odoo 18.0 (branch 18.0): install the module, create test data
+#   2. Odoo 19.0 (this branch) + OpenUpgrade: upgrade the same database
+#   3. Check the migrated data and the feed (.github/upgrade/verify_19.py)
+#
+# Slow (upgrades all installed Odoo modules), so it runs only when migration
+# code changes, or by hand from the Actions tab.
+name: Upgrade
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "19.0"
+    paths:
+      - "website_hr_recruitment_ojobpub/migrations/**"
+      - ".github/upgrade/**"
+      - ".github/workflows/upgrade.yml"
+  pull_request:
+    paths:
+      - "website_hr_recruitment_ojobpub/migrations/**"
+      - ".github/upgrade/**"
+      - ".github/workflows/upgrade.yml"
+
+permissions:
+  contents: read
+
+env:
+  DB: upgrade
+  ODOO_18_IMAGE: ghcr.io/oca/oca-ci/py3.10-odoo18.0:latest
+  ODOO_19_IMAGE: ghcr.io/oca/oca-ci/py3.10-odoo19.0:latest
+
+jobs:
+  upgrade-18-to-19:
+    name: Upgrade 18.0 → 19.0
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: odoo
+          POSTGRES_PASSWORD: odoo
+          POSTGRES_DB: odoo
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - name: Checkout this branch (19.0)
+        uses: actions/checkout@v7
+        with:
+          path: v19
+          persist-credentials: false
+
+      - name: Checkout 18.0
+        uses: actions/checkout@v7
+        with:
+          ref: "18.0"
+          path: v18
+          persist-credentials: false
+
+      - name: Checkout OpenUpgrade 19.0
+        uses: actions/checkout@v7
+        with:
+          repository: OCA/OpenUpgrade
+          ref: "19.0"
+          path: openupgrade
+          persist-credentials: false
+
+      # Both Odoo versions run in their OCA CI image against the same
+      # PostgreSQL service, so the database needs no dump and restore.
+      - name: Odoo 18.0 - install module and create test data
+        run: |
+          docker run --rm --network host -e PGHOST=localhost -e DB \
+            -v "$PWD:/work" -w /work/v18 "$ODOO_18_IMAGE" bash -euxc '
+              oca_install_addons
+              odoo -d "$DB" -i website_hr_recruitment_ojobpub \
+                --stop-after-init --http-interface=127.0.0.1
+              odoo shell -d "$DB" --no-http < /work/v19/.github/upgrade/seed_18.py
+            '
+
+      - name: Odoo 19.0 - upgrade with OpenUpgrade and verify
+        run: |
+          docker run --rm --network host -e PGHOST=localhost -e DB \
+            -v "$PWD:/work" -w /work/v19 "$ODOO_19_IMAGE" bash -euxc '
+              oca_install_addons
+              pip install -q -r /work/openupgrade/requirements.txt \
+                "git+https://github.com/OCA/openupgradelib.git@master"
+              odoo -d "$DB" -u all --stop-after-init --http-interface=127.0.0.1 \
+                --addons-path=/opt/odoo/addons,/work/openupgrade,/work/v19 \
+                --load=base,web,openupgrade_framework
+              odoo shell -d "$DB" --no-http \
+                --addons-path=/opt/odoo/addons,/work/v19 \
+                < /work/v19/.github/upgrade/verify_19.py
+            '

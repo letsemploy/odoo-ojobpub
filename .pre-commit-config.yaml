@@ -21,3 +21,5 @@ repos:
     hooks:
       - id: pylint_odoo
         args: ["--rcfile=.pylintrc"]
+        # CI helper scripts run in `odoo shell`, they are not addon code
+        exclude: ^\.github/
