@@ -48,7 +48,7 @@ class OjobpubTestMixin:
     def setup_ojobpub_data(cls):
         env = cls.env
         today = fields.Date.today()
-        cls.website = env.ref("website.default_website")
+        cls.website = env.ref("base.default_website")
         cls.website.write({"ojobpub_enabled": True, "ojobpub_language_mode": "default"})
 
         swiss = env.ref("base.ch")
