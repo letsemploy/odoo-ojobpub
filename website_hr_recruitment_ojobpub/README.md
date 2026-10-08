@@ -61,7 +61,7 @@ the same feed as anonymous visitors.
 | `locations` | Job location (`address_id`), fallback company address |
 | `url` | `/jobs/<slug>` with language prefix for non-default languages |
 | `referenceId` | Job ID (same for all languages of a job) |
-| `description` | *Feed Summary*, else the job summary converted to plain text, max. 1000 characters |
+| `description` | *Feed Summary*, else the job summary converted to plain text (left out while it is still Odoo's sample text), max. 1000 characters |
 | `category` | Department |
 | `applyBefore` | *Apply Before* |
 | `startDate` / `endDate` | *Start Date* / *End Date* |

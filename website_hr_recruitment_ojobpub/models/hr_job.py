@@ -213,8 +213,21 @@ class HrJob(models.Model):
 
     def _ojobpub_description_text(self):
         self.ensure_one()
-        text = self.ojobpub_description or _html_to_text(self.description)
+        text = self.ojobpub_description or self._ojobpub_summary_text()
         return _truncate(text, MAX_DESCRIPTION)
+
+    def _ojobpub_summary_text(self):
+        """The job summary as plain text, unless it is Odoo's sample text.
+
+        Odoo 20 pre-fills the summary of new jobs with a generic text that says
+        nothing about the job; job boards should not get it as description.
+        """
+        self.ensure_one()
+        text = _html_to_text(self.description)
+        default = self._fields["description"].default
+        if text and default and text == _html_to_text(default(self)):
+            return ""
+        return text
 
     def _ojobpub_location(self):
         self.ensure_one()
