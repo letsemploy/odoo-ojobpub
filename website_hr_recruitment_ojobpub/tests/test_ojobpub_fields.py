@@ -1,8 +1,11 @@
 from datetime import timedelta
 
+from psycopg2 import IntegrityError
+
 from odoo import fields
 from odoo.exceptions import ValidationError
 from odoo.tests import TransactionCase, tagged
+from odoo.tools import mute_logger
 
 from .common import OjobpubTestMixin, validate_against_schema
 
@@ -105,7 +108,12 @@ class TestOjobpubFields(OjobpubTestMixin, TransactionCase):
             self.job_remote.ojobpub_tag_ids = tags
         with self.assertRaises(ValidationError):
             self.env["ojobpub.tag"].create({"name": "   "})
-        with self.assertRaises(ValidationError):
+        # case-insensitive unique index (the test data has "python")
+        with (
+            self.assertRaises(IntegrityError),
+            mute_logger("odoo.sql_db"),
+            self.env.cr.savepoint(),
+        ):
             self.env["ojobpub.tag"].create({"name": "Python"})
         self.assertEqual(self.env["ojobpub.tag"].create({"name": " django "}).name, "django")
 

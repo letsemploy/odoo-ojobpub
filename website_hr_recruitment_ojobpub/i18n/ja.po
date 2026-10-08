@@ -373,12 +373,6 @@ msgstr "フィード用の概要は %(max)s 文字以内にしてください。
 
 #. module: website_hr_recruitment_ojobpub
 #. odoo-python
-#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
-msgid "The keyword “%(name)s” already exists."
-msgstr "キーワード「%(name)s」は既に存在します。"
-
-#. module: website_hr_recruitment_ojobpub
-#. odoo-python
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The minimum salary cannot exceed the maximum salary."
 msgstr "給与の下限は上限を超えることはできません。"

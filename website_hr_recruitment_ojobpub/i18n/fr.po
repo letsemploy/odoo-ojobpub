@@ -385,12 +385,6 @@ msgstr "Le résumé pour le flux est limité à %(max)s caractères."
 
 #. module: website_hr_recruitment_ojobpub
 #. odoo-python
-#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
-msgid "The keyword “%(name)s” already exists."
-msgstr "Le mot-clé « %(name)s » existe déjà."
-
-#. module: website_hr_recruitment_ojobpub
-#. odoo-python
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The minimum salary cannot exceed the maximum salary."
 msgstr "Le salaire minimum ne peut pas dépasser le salaire maximum."
