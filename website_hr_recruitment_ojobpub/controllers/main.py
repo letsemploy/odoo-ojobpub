@@ -17,7 +17,7 @@ class OjobpubController(http.Controller):
         methods=["GET"],
     )
     def ojobpub_feed(self, **kwargs):
-        website = request.website
+        website = request.env.website  # Odoo 20: request.website was removed
         if not website.ojobpub_enabled:
             raise request.not_found()
 
