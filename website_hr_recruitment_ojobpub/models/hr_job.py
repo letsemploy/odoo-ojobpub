@@ -87,7 +87,7 @@ class HrJob(models.Model):
         compute="_compute_ojobpub_job_type",
         store=True,
         readonly=False,
-        help="Defaults from the oJobPub job type of the employment type.",
+        help="Defaults from the oJobPub job type of the employee type.",
     )
     ojobpub_work_type = fields.Selection(
         WORK_TYPES,
@@ -140,11 +140,11 @@ class HrJob(models.Model):
     # Computes and constraints
     # ------------------------------------------------------------------
 
-    @api.depends("contract_type_id.ojobpub_job_type")
+    @api.depends("employee_type_id.ojobpub_job_type")
     def _compute_ojobpub_job_type(self):
         for job in self:
             job.ojobpub_job_type = (
-                job.contract_type_id.ojobpub_job_type or job.ojobpub_job_type or "permanent"
+                job.employee_type_id.ojobpub_job_type or job.ojobpub_job_type or "permanent"
             )
 
     @api.depends("address_id")
@@ -228,7 +228,8 @@ class HrJob(models.Model):
         carry the matching Odoo language in its context.
         """
         self.ensure_one()
-        published = self.published_date or self.create_date.date()
+        # Odoo 20: published_date is a Datetime of website.published.mixin
+        published = fields.Date.to_date(self.published_date or self.create_date)
         entry = {
             "title": _truncate(self.name, MAX_TITLE),
             "language": language,

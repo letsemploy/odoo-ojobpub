@@ -1,4 +1,4 @@
-# oJobPub Job Feed for Odoo 19
+# oJobPub Job Feed for Odoo 20
 
 Publishes the jobs of an Odoo website as an [oJobPub](https://www.letsemploy.org)
 feed at `https://<your-domain>/.well-known/ojobpub.json`. Job boards and search
@@ -6,7 +6,7 @@ engines read the feed directly from the employer's website; registering the
 domain once at [SourceTracker](https://sources.letsemploy.org/sources/new) gets
 the jobs into the free daily export and API of Let's Employ.
 
-- Odoo 19.0 (Community and Enterprise), depends on `website_hr_recruitment`
+- Odoo 20.0 (Community and Enterprise), depends on `website_hr_recruitment`
 - [oJobPub schema v1](https://github.com/letsemploy/schema) (`"version": "1.0"`)
 - License: LGPL-3
 
@@ -17,11 +17,11 @@ the jobs into the free daily export and API of Let's Employ.
 3. Open `https://<your-domain>/.well-known/ojobpub.json`.
 4. Register the domain at <https://sources.letsemploy.org/sources/new>.
 
-The install hook pre-fills the oJobPub job type of Odoo's standard employment
-types (Permanent, Temporary, Interim, Seasonal, Apprenticeship, Intern, Thesis,
-Student).
-Other employment types can be mapped under
-*Recruitment → Configuration → Employment Types*.
+The install hook pre-fills the oJobPub job type of Odoo's standard employee
+types (Interim, Occasional / Seasonal, Apprenticeship, Intern, Thesis, Student).
+Odoo 20 has no standard *Permanent* type; jobs without a mapped employee type
+default to `permanent`. Other employee types can be mapped under
+*Recruitment → Configuration → Employee Types*.
 
 ## Configuration
 
@@ -57,7 +57,7 @@ the same feed as anonymous visitors.
 | `title` | Job position name (translated) |
 | `language` | ISO 639-1 part of the Odoo language (`de_CH` → `de`); languages without a two-letter code (e.g. Kabyle) are not listed |
 | `publishedAt` | `published_date` (set by Odoo on publish), fallback creation date |
-| `jobType` | *Job Type*, defaults from the employment type's oJobPub job type, fallback `permanent` |
+| `jobType` | *Job Type*, defaults from the employee type's oJobPub job type, fallback `permanent` |
 | `locations` | Job location (`address_id`), fallback company address |
 | `url` | `/jobs/<slug>` with language prefix for non-default languages |
 | `referenceId` | Job ID (same for all languages of a job) |

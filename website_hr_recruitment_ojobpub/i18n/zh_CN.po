@@ -42,7 +42,7 @@ msgid "Apply Before"
 msgstr "申请截止日期"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__apprenticeship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__apprenticeship
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__apprenticeship
 msgid "Apprenticeship"
 msgstr "学徒"
@@ -63,15 +63,10 @@ msgid "Config Settings"
 msgstr "配置设置"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__contract
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__contract
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__contract
 msgid "Contract"
 msgstr "项目合同"
-
-#. module: website_hr_recruitment_ojobpub
-#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_contract_type
-msgid "Contract Type"
-msgstr "合同类型"
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__create_uid
@@ -106,14 +101,14 @@ msgstr ""
 "全部：每个职位和每种网站语言各一条记录，即使未翻译。"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
-msgid "Default oJobPub job type for job positions with this employment type."
-msgstr "具有此雇用类型的职位的默认 oJobPub 职位类型。"
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_employee_type__ojobpub_job_type
+msgid "Default oJobPub job type for job positions with this employee type."
+msgstr "具有此员工类型的职位的默认 oJobPub 职位类型。"
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_job_type
-msgid "Defaults from the oJobPub job type of the employment type."
-msgstr "默认取自雇用类型的 oJobPub 职位类型。"
+msgid "Defaults from the oJobPub job type of the employee type."
+msgstr "默认取自员工类型的 oJobPub 职位类型。"
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_work_type
@@ -135,6 +130,11 @@ msgstr "显示名称"
 #: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
 msgid "Do not list this job in the oJobPub feed, even when it is published."
 msgstr "即使已发布，也不在 oJobPub 订阅源中列出此职位。"
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_employee_type
+msgid "Employee Type"
+msgstr "员工类型"
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
@@ -168,7 +168,7 @@ msgid "First working day of the job (oJobPub startDate)."
 msgstr "职位的第一个工作日（oJobPub startDate）。"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__freelance
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__freelance
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__freelance
 msgid "Freelance"
 msgstr "自由职业"
@@ -189,7 +189,7 @@ msgid "ID"
 msgstr "ID"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__internship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__internship
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__internship
 msgid "Internship"
 msgstr "实习"
@@ -278,7 +278,7 @@ msgid ""
 msgstr "可选的纯文本摘要（最多 1000 个字符）。如果为空，则使用职位摘要。"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__permanent
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__permanent
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__permanent
 msgid "Permanent"
 msgstr "长期"
@@ -360,7 +360,7 @@ msgid "Start Date"
 msgstr "开始日期"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__temporary
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__temporary
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__temporary
 msgid "Temporary"
 msgstr "临时"
@@ -407,7 +407,7 @@ msgid "This keyword already exists."
 msgstr "此关键词已存在。"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__volunteer
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__volunteer
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__volunteer
 msgid "Volunteer"
 msgstr "志愿者"
@@ -468,7 +468,7 @@ msgid "oJobPub Feed"
 msgstr "oJobPub 订阅源"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_employee_type__ojobpub_job_type
 msgid "oJobPub Job Type"
 msgstr "oJobPub 职位类型"
 

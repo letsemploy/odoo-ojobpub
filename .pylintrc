@@ -3,7 +3,7 @@ load-plugins=pylint_odoo
 score=n
 
 [ODOOLINT]
-valid-odoo-versions=19.0
+valid-odoo-versions=20.0
 manifest-required-authors=Let's Employ
 manifest-required-keys=license
 

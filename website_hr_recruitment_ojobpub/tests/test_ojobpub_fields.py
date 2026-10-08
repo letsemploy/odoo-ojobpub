@@ -62,21 +62,21 @@ class TestOjobpubFields(OjobpubTestMixin, TransactionCase):
     # Defaults and constraints
     # ------------------------------------------------------------------
 
-    def test_install_hook_maps_standard_employment_types(self):
-        self.assertEqual(self.env.ref("hr.contract_type_permanent").ojobpub_job_type, "permanent")
+    def test_install_hook_maps_standard_employee_types(self):
         self.assertEqual(self.env.ref("hr.contract_type_student").ojobpub_job_type, "internship")
         self.assertEqual(self.env.ref("hr.contract_type_interim").ojobpub_job_type, "temporary")
         self.assertEqual(self.env.ref("hr.contract_type_intern").ojobpub_job_type, "internship")
-        self.assertFalse(self.env.ref("hr.contract_type_full_time").ojobpub_job_type)
+        self.assertEqual(self.env.ref("hr.contract_type_seasonal").ojobpub_job_type, "temporary")
+        self.assertFalse(self.env.ref("hr.contract_type_employee").ojobpub_job_type)
 
-    def test_job_type_from_employment_type(self):
-        apprenticeship = self.env["hr.contract.type"].create(
+    def test_job_type_from_employee_type(self):
+        apprenticeship = self.env["hr.employee.type"].create(
             {
                 "name": "Lehrstelle",
                 "ojobpub_job_type": "apprenticeship",
             }
         )
-        self.job_remote.contract_type_id = apprenticeship
+        self.job_remote.employee_type_id = apprenticeship
         self.assertEqual(self.job_remote.ojobpub_job_type, "apprenticeship")
 
     def test_work_type_follows_address(self):

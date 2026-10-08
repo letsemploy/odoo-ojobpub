@@ -42,7 +42,7 @@ msgid "Apply Before"
 msgstr "Postular antes del"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__apprenticeship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__apprenticeship
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__apprenticeship
 msgid "Apprenticeship"
 msgstr "Formación profesional"
@@ -63,15 +63,10 @@ msgid "Config Settings"
 msgstr "Ajustes de configuración"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__contract
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__contract
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__contract
 msgid "Contract"
 msgstr "Contrato por proyecto"
-
-#. module: website_hr_recruitment_ojobpub
-#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_contract_type
-msgid "Contract Type"
-msgstr "Tipo de contrato"
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_ojobpub_tag__create_uid
@@ -106,17 +101,16 @@ msgstr ""
 "Todos: una entrada por empleo e idioma del sitio web, aunque no esté traducido."
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
-msgid "Default oJobPub job type for job positions with this employment type."
+#: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_employee_type__ojobpub_job_type
+msgid "Default oJobPub job type for job positions with this employee type."
 msgstr ""
 "Tipo de empleo oJobPub predeterminado para los puestos con este tipo de "
-"empleo."
+"empleado."
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_job_type
-msgid "Defaults from the oJobPub job type of the employment type."
-msgstr ""
-"Se toma por defecto del tipo de empleo oJobPub del tipo de contratación."
+msgid "Defaults from the oJobPub job type of the employee type."
+msgstr "Se toma por defecto del tipo de empleo oJobPub del tipo de empleado."
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_work_type
@@ -139,6 +133,11 @@ msgstr "Nombre para mostrar"
 #: model:ir.model.fields,help:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_exclude
 msgid "Do not list this job in the oJobPub feed, even when it is published."
 msgstr "No incluir este empleo en el feed oJobPub, aunque esté publicado."
+
+#. module: website_hr_recruitment_ojobpub
+#: model:ir.model,name:website_hr_recruitment_ojobpub.model_hr_employee_type
+msgid "Employee Type"
+msgstr "Tipo de empleado"
 
 #. module: website_hr_recruitment_ojobpub
 #: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_job__ojobpub_end_date
@@ -172,7 +171,7 @@ msgid "First working day of the job (oJobPub startDate)."
 msgstr "Primer día de trabajo del empleo (oJobPub startDate)."
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__freelance
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__freelance
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__freelance
 msgid "Freelance"
 msgstr "Autónomo"
@@ -193,7 +192,7 @@ msgid "ID"
 msgstr "ID"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__internship
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__internship
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__internship
 msgid "Internship"
 msgstr "Prácticas"
@@ -285,7 +284,7 @@ msgstr ""
 "usa el resumen del empleo."
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__permanent
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__permanent
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__permanent
 msgid "Permanent"
 msgstr "Indefinido"
@@ -373,7 +372,7 @@ msgid "Start Date"
 msgstr "Fecha de inicio"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__temporary
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__temporary
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__temporary
 msgid "Temporary"
 msgstr "Temporal"
@@ -420,7 +419,7 @@ msgid "This keyword already exists."
 msgstr "Esta palabra clave ya existe."
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_contract_type__ojobpub_job_type__volunteer
+#: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_employee_type__ojobpub_job_type__volunteer
 #: model:ir.model.fields.selection,name:website_hr_recruitment_ojobpub.selection__hr_job__ojobpub_job_type__volunteer
 msgid "Volunteer"
 msgstr "Voluntariado"
@@ -481,7 +480,7 @@ msgid "oJobPub Feed"
 msgstr "Feed oJobPub"
 
 #. module: website_hr_recruitment_ojobpub
-#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_contract_type__ojobpub_job_type
+#: model:ir.model.fields,field_description:website_hr_recruitment_ojobpub.field_hr_employee_type__ojobpub_job_type
 msgid "oJobPub Job Type"
 msgstr "Tipo de empleo oJobPub"
 

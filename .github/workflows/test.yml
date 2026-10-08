@@ -29,9 +29,9 @@ jobs:
         run: uvx pre-commit run --all-files --show-diff-on-failure
 
   test:
-    name: Odoo 19.0 tests
+    name: Odoo 20.0 tests
     runs-on: ubuntu-latest
-    container: ghcr.io/oca/oca-ci/py3.10-odoo19.0:latest
+    container: ghcr.io/oca/oca-ci/py3.12-odoo20.0:latest
     services:
       postgres:
         image: postgres:16

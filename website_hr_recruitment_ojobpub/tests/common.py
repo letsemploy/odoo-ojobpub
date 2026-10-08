@@ -60,7 +60,7 @@ class OjobpubTestMixin:
             }
         )
         cls.department = env["hr.department"].create({"name": "Engineering"})
-        cls.contract_permanent = env["hr.contract.type"].create(
+        cls.employee_type_permanent = env["hr.employee.type"].create(
             {
                 "name": "Unbefristet",
                 "ojobpub_job_type": "permanent",
@@ -75,7 +75,7 @@ class OjobpubTestMixin:
                 "website_published": True,
                 "address_id": cls.office.id,
                 "department_id": cls.department.id,
-                "contract_type_id": cls.contract_permanent.id,
+                "employee_type_id": cls.employee_type_permanent.id,
                 "description": "<p>Build <b>Odoo</b> modules.</p>"
                 + "<p>Lorem ipsum dolor sit amet. </p>" * 60,
                 "ojobpub_experience_level": "mid",

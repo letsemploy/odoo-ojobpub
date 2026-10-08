@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="hr_contract_type_view_tree_ojobpub" model="ir.ui.view">
-        <field name="name">hr.contract.type.list.ojobpub</field>
-        <field name="model">hr.contract.type</field>
+    <record id="hr_employee_type_view_tree_ojobpub" model="ir.ui.view">
+        <field name="name">hr.employee.type.list.ojobpub</field>
+        <field name="model">hr.employee.type</field>
         <field name="inherit_id" ref="hr.hr_contract_type_view_tree"/>
         <field name="arch" type="xml">
             <field name="name" position="after">
@@ -11,9 +11,9 @@
         </field>
     </record>
 
-    <record id="hr_contract_type_view_form_ojobpub" model="ir.ui.view">
-        <field name="name">hr.contract.type.form.ojobpub</field>
-        <field name="model">hr.contract.type</field>
+    <record id="hr_employee_type_view_form_ojobpub" model="ir.ui.view">
+        <field name="name">hr.employee.type.form.ojobpub</field>
+        <field name="model">hr.employee.type</field>
         <field name="inherit_id" ref="hr.hr_contract_type_view_form"/>
         <field name="arch" type="xml">
             <field name="country_id" position="after">
