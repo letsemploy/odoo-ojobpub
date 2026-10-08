@@ -12,8 +12,8 @@ class OjobpubTag(models.Model):
     name = fields.Char(required=True, size=MAX_TAG_LENGTH)
     color = fields.Integer()
 
-    # Case-insensitive, like the check in _check_name, which gives the nicer
-    # message; the index is the guarantee.
+    # oJobPub tags must be unique per job; "Python" and "python" would be two
+    # keywords in Odoo but look like duplicates.
     _name_uniq = models.UniqueIndex("(lower(name))", "This keyword already exists.")
 
     @api.model_create_multi
@@ -38,11 +38,4 @@ class OjobpubTag(models.Model):
                         "oJobPub keywords must have between 1 and %(max)s characters.",
                         max=MAX_TAG_LENGTH,
                     )
-                )
-            # oJobPub tags must be unique per job; "Python" and "python" would
-            # be two different keywords in Odoo but look like duplicates.
-            candidates = self.search([("id", "!=", tag.id), ("name", "=ilike", name)])
-            if any(other.lower() == name.lower() for other in candidates.mapped("name")):
-                raise ValidationError(
-                    self.env._("The keyword “%(name)s” already exists.", name=name)
                 )

@@ -385,12 +385,6 @@ msgstr "El resumen para el feed está limitado a %(max)s caracteres."
 
 #. module: website_hr_recruitment_ojobpub
 #. odoo-python
-#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
-msgid "The keyword “%(name)s” already exists."
-msgstr "La palabra clave «%(name)s» ya existe."
-
-#. module: website_hr_recruitment_ojobpub
-#. odoo-python
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The minimum salary cannot exceed the maximum salary."
 msgstr "El salario mínimo no puede superar el salario máximo."

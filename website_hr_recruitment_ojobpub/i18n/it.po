@@ -393,12 +393,6 @@ msgstr "Il riepilogo per il feed è limitato a %(max)s caratteri."
 
 #. module: website_hr_recruitment_ojobpub
 #. odoo-python
-#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
-msgid "The keyword “%(name)s” already exists."
-msgstr "La parola chiave «%(name)s» esiste già."
-
-#. module: website_hr_recruitment_ojobpub
-#. odoo-python
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The minimum salary cannot exceed the maximum salary."
 msgstr "La retribuzione minima non può superare la retribuzione massima."

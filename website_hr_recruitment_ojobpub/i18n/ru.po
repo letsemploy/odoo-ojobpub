@@ -385,12 +385,6 @@ msgstr "Описание для фида не может превышать %(ma
 
 #. module: website_hr_recruitment_ojobpub
 #. odoo-python
-#: code:addons/website_hr_recruitment_ojobpub/models/ojobpub_tag.py:0
-msgid "The keyword “%(name)s” already exists."
-msgstr "Ключевое слово «%(name)s» уже существует."
-
-#. module: website_hr_recruitment_ojobpub
-#. odoo-python
 #: code:addons/website_hr_recruitment_ojobpub/models/hr_job.py:0
 msgid "The minimum salary cannot exceed the maximum salary."
 msgstr "Минимальная зарплата не может превышать максимальную."
