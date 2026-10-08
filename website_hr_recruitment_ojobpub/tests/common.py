@@ -4,8 +4,10 @@ from datetime import timedelta
 from pathlib import Path
 
 from odoo import fields
+from odoo.modules.module import load_script
 
 SCHEMA_PATH = Path(__file__).parent / "data" / "ojobpub.schema.json"
+MIGRATIONS_PATH = Path(__file__).parent.parent / "migrations"
 
 try:
     import jsonschema
@@ -29,6 +31,15 @@ def validate_against_schema(test, payload):
     test.assertFalse(
         errors,
         "\n".join(f"{'/'.join(map(str, e.path))}: {e.message}" for e in errors),
+    )
+
+
+def load_migration(version, stage="pre"):
+    """Load a migration script the way Odoo's upgrade does."""
+    name = f"{stage}-migrate"
+    return load_script(
+        str(MIGRATIONS_PATH / version / f"{name}.py"),
+        f"odoo.upgrade.website_hr_recruitment_ojobpub.{version}.{name}",
     )
 
 
