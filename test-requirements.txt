@@ -1,1 +1,4 @@
 jsonschema[format]
+# Optional dependency of attachment_indexation (installed with hr_recruitment);
+# without it Odoo logs a warning that fails the CI log check.
+pdfminer.six
