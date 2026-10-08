@@ -13,7 +13,7 @@
     "license": "LGPL-3",
     "depends": ["website_hr_recruitment"],
     "data": [
-        "security/ir.model.access.csv",
+        "security/ir.access.csv",
         "views/hr_job_views.xml",
         "views/hr_employee_type_views.xml",
         "views/ojobpub_tag_views.xml",
